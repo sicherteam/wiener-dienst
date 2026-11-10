@@ -1170,6 +1170,9 @@ def build_keyword_page(item):
     <meta name="keywords" content="{kw}, Entrümpelung Wien, Entrümpelung firma, Räumung Wien, Räumungsfirma, Wiener Dienst, Besenrein zum Fixpreis">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="{DOMAIN}/{file_name}">
+    <!-- Wiener Wappen / Shield Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 115'%3E%3Cpath d='M8 6 H92 V48 C92 80 50 106 50 109 C50 106 8 80 8 48 Z' fill='%23ffffff'/%3E%3Cpath d='M12 10 H43 V46 H12 Z' fill='%23ff0000'/%3E%3Cpath d='M57 10 H88 V46 H57 Z' fill='%23ff0000'/%3E%3Cpath d='M12 58 H43 V100 C26 89 13 74 12 58 Z' fill='%23ff0000'/%3E%3Cpath d='M57 58 H88 C87 74 74 89 57 100 Z' fill='%23ff0000'/%3E%3C/svg%3E">
+
 
     <!-- Open Graph / Social -->
     <meta property="og:title" content="{title}">
@@ -1618,6 +1621,9 @@ def build_index_page():
     <meta name="keywords" content="Entrümpelung Wien, Entrümpelung firma, Räumung Wien, Räumungsfirma, Möbel abholen lassen, Wohnungentrümpelung wien, Wohnungsraumung Wien, Keller Entrümpelung, Keller Räumung, Verlassenschaften Wien, Hausräumung Wien, Haus Entrümpelung Wien, Gemeinde Wohnung Entrümpelung, Dachbodenentrümpelung, Gemeinde wohnungsräumung, Wien Entrümpelung, Verlassenschaftsräumung, Verlassenschafts Entrümpelung, Nachlassräumung, Nachlass Entrümpelung, Messie Räumung, Messie Entrümpelung">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="{DOMAIN}/">
+    <!-- Wiener Wappen / Shield Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 115'%3E%3Cpath d='M8 6 H92 V48 C92 80 50 106 50 109 C50 106 8 80 8 48 Z' fill='%23ffffff'/%3E%3Cpath d='M12 10 H43 V46 H12 Z' fill='%23ff0000'/%3E%3Cpath d='M57 10 H88 V46 H57 Z' fill='%23ff0000'/%3E%3Cpath d='M12 58 H43 V100 C26 89 13 74 12 58 Z' fill='%23ff0000'/%3E%3Cpath d='M57 58 H88 C87 74 74 89 57 100 Z' fill='%23ff0000'/%3E%3C/svg%3E">
+
 
     <!-- Open Graph / Social -->
     <meta property="og:title" content="{title}">
@@ -2061,6 +2067,9 @@ def build_kontakt_page():
     <title>{title}</title>
     <meta name="description" content="{meta_desc}">
     <link rel="canonical" href="{DOMAIN}/kontakt.html">
+    <!-- Wiener Wappen / Shield Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 115'%3E%3Cpath d='M8 6 H92 V48 C92 80 50 106 50 109 C50 106 8 80 8 48 Z' fill='%23ffffff'/%3E%3Cpath d='M12 10 H43 V46 H12 Z' fill='%23ff0000'/%3E%3Cpath d='M57 10 H88 V46 H57 Z' fill='%23ff0000'/%3E%3Cpath d='M12 58 H43 V100 C26 89 13 74 12 58 Z' fill='%23ff0000'/%3E%3Cpath d='M57 58 H88 C87 74 74 89 57 100 Z' fill='%23ff0000'/%3E%3C/svg%3E">
+
     <meta name="robots" content="index, follow">
 
     <!-- Tailwind CSS -->
@@ -2357,6 +2366,9 @@ def build_impressum_page():
     <title>Impressum | Wiener Dienst – Entrümpelung &amp; Räumungsfirma Wien</title>
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{DOMAIN}/impressum.html">
+    <!-- Wiener Wappen / Shield Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 115'%3E%3Cpath d='M8 6 H92 V48 C92 80 50 106 50 109 C50 106 8 80 8 48 Z' fill='%23ffffff'/%3E%3Cpath d='M12 10 H43 V46 H12 Z' fill='%23ff0000'/%3E%3Cpath d='M57 10 H88 V46 H57 Z' fill='%23ff0000'/%3E%3Cpath d='M12 58 H43 V100 C26 89 13 74 12 58 Z' fill='%23ff0000'/%3E%3Cpath d='M57 58 H88 C87 74 74 89 57 100 Z' fill='%23ff0000'/%3E%3C/svg%3E">
+
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -2466,6 +2478,9 @@ def build_datenschutz_page():
     <title>Datenschutzerklärung (DSGVO) | Wiener Dienst</title>
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{DOMAIN}/datenschutz.html">
+    <!-- Wiener Wappen / Shield Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 115'%3E%3Cpath d='M8 6 H92 V48 C92 80 50 106 50 109 C50 106 8 80 8 48 Z' fill='%23ffffff'/%3E%3Cpath d='M12 10 H43 V46 H12 Z' fill='%23ff0000'/%3E%3Cpath d='M57 10 H88 V46 H57 Z' fill='%23ff0000'/%3E%3Cpath d='M12 58 H43 V100 C26 89 13 74 12 58 Z' fill='%23ff0000'/%3E%3Cpath d='M57 58 H88 C87 74 74 89 57 100 Z' fill='%23ff0000'/%3E%3C/svg%3E">
+
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
