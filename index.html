@@ -64,7 +64,7 @@
         body { font-family: 'Inter', sans-serif; }
         .hero-pattern {
             background-color: #0f172a;
-            background-image: radial-gradient(at 0% 0%, rgba(220, 38, 38, 0.25) 0px, transparent 50%),
+            background-image: radial-gradient(at 0% 0%, rgba(220, 38, 38, 0.22) 0px, transparent 50%),
                               radial-gradient(at 100% 100%, rgba(30, 58, 138, 0.35) 0px, transparent 50%);
         }
         @keyframes pulse-ring {
@@ -153,16 +153,124 @@
     }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased pb-24 lg:pb-0">
+<body class="bg-slate-50 text-slate-900 antialiased pb-24 lg:pb-0 selection:bg-wienRed-600 selection:text-white">
 
-    <!-- TOP URGENCY / TRUST BAR -->
-    <div class="bg-navy-950 text-white text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-            <div class="flex items-center space-x-4">
-                <span class="flex items-center text-emerald-400 font-semibold">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping mr-2"></span>
+    <!-- TOP URGENCY / TRUST BAR (SINGLE LINE) -->
+    <div class="bg-navy-950 text-white text-xs py-2 px-4 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 overflow-x-auto no-scrollbar whitespace-nowrap">
+            <div class="flex items-center gap-5 shrink-0">
+                <span class="inline-flex items-center text-emerald-400 font-semibold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping mr-2"></span>
                     Heute noch freie Besichtigungstermine in allen 23 Wiener Bezirken!
                 </span>
+                <span class="hidden md:inline-flex items-center text-slate-300 font-medium">
+                    <i class="fa-solid fa-shield-halved text-wienRed-500 mr-1.5"></i> Handschlagqualität &amp; 100% Fixpreis-Garantie
+                </span>
+            </div>
+            <div class="flex items-center gap-4 ml-auto shrink-0">
+                <a href="mailto:office@wiener-dienst.at" onclick="trackConversion('email_click')" class="hover:text-wienRed-400 transition inline-flex items-center gap-1.5 text-slate-200 font-medium">
+                    <i class="fa-solid fa-envelope text-wienRed-500"></i>
+                    <span>office@wiener-dienst.at</span>
+                </a>
+                <span class="text-slate-700">|</span>
+                <a href="tel:+436604445617" onclick="trackConversion('phone_click')" class="font-bold text-amber-400 hover:text-amber-300 transition inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>+43 660 444 5617</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY HEADER / NAVIGATION (STRICT SINGLE-LINE UI/UX) -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/90">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3 xl:gap-6">
+            
+            <!-- Brand Logo (Guaranteed Single-Line Subtitle) -->
+            <a href="#top" onclick="showPage('home')" class="flex items-center gap-3 group shrink-0">
+                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-wienRed-600 to-wienRed-800 flex items-center justify-center text-white shadow-md shadow-wienRed-600/20 group-hover:scale-105 transition shrink-0">
+                    <i class="fa-solid fa-truck-ramp-box text-xl sm:text-2xl"></i>
+                </div>
+                <div class="flex flex-col justify-center shrink-0">
+                    <div class="flex items-center gap-1 leading-none">
+                        <span class="text-lg sm:text-2xl font-black tracking-tight text-navy-900 whitespace-nowrap">WIENER</span>
+                        <span class="text-lg sm:text-2xl font-black tracking-tight text-wienRed-600 whitespace-nowrap">DIENST</span>
+                    </div>
+                    <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 whitespace-nowrap leading-none mt-1.5">
+                        Entrümpelung &amp; Räumungsfirma Wien
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links (Strictly 1 Row, Never Wraps) -->
+            <nav class="hidden lg:flex items-center justify-center gap-1 xl:gap-1.5 text-[13px] xl:text-sm font-semibold text-slate-700 whitespace-nowrap shrink-0">
+                <button onclick="showPage('home')" id="nav-btn-home" class="px-3 py-2 rounded-lg text-wienRed-600 bg-wienRed-50 font-bold transition whitespace-nowrap">
+                    Startseite
+                </button>
+                <a href="#preisrechner" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition inline-flex items-center gap-1.5 whitespace-nowrap">
+                    <i class="fa-solid fa-calculator text-wienRed-600 text-xs"></i>
+                    <span>Preisrechner</span>
+                </a>
+                <a href="#leistungen" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
+                    Leistungen
+                </a>
+                <a href="#keyword-index" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
+                    22 Spezial-Seiten
+                </a>
+                <a href="#faq" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
+                    FAQ
+                </a>
+                <button onclick="showPage('kontakt')" id="nav-btn-kontakt" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition inline-flex items-center gap-1.5 whitespace-nowrap">
+                    <i class="fa-regular fa-address-card text-wienRed-600"></i>
+                    <span>Kontakt</span>
+                </button>
+            </nav>
+
+            <!-- Header Conversion CTAs (Strictly 1 Row, Shrink-0) -->
+            <div class="flex items-center gap-2 shrink-0">
+                <a href="https://wa.me/436604445617?text=Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20unverbindliches%20Angebot%20f%C3%BCr%20eine%20Entr%C3%BCmpelung%20in%20Wien." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
+                   class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs xl:text-sm px-3.5 py-2.5 rounded-xl shadow-sm transition whitespace-nowrap shrink-0">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="tel:+436604445617" onclick="trackConversion('phone_click')"
+                   class="inline-flex items-center gap-2 bg-wienRed-600 hover:bg-wienRed-700 text-white font-bold text-xs xl:text-sm px-3.5 sm:px-4 py-2.5 rounded-xl shadow-md shadow-wienRed-600/25 transition whitespace-nowrap shrink-0">
+                    <i class="fa-solid fa-phone ring-icon"></i>
+                    <span>+43 660 444 5617</span>
+                </a>
+                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 shrink-0" aria-label="Menü">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-5 space-y-2 shadow-xl">
+            <button onclick="showPage('home'); toggleMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-lg font-bold text-navy-900 hover:bg-slate-100 flex items-center justify-between">
+                <span><i class="fa-solid fa-house text-wienRed-600 mr-2"></i> Startseite (Index)</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+            </button>
+            <a href="#preisrechner" onclick="showPage('home'); toggleMobileMenu();" class="block px-3 py-2.5 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">
+                <i class="fa-solid fa-calculator text-wienRed-600 mr-2"></i> Interaktiver Preisrechner
+            </a>
+            <a href="#leistungen" onclick="showPage('home'); toggleMobileMenu();" class="block px-3 py-2.5 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">
+                <i class="fa-solid fa-broom text-wienRed-600 mr-2"></i> Leistungen Overview
+            </a>
+            <a href="#keyword-index" onclick="showPage('home'); toggleMobileMenu();" class="block px-3 py-2.5 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">
+                <i class="fa-solid fa-layer-group text-wienRed-600 mr-2"></i> Alle 22 Keyword-Zielseiten
+            </a>
+            <button onclick="showPage('kontakt'); toggleMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-lg font-bold text-wienRed-600 bg-wienRed-50 hover:bg-wienRed-100 flex items-center justify-between">
+                <span><i class="fa-solid fa-headset mr-2"></i> Kontakt-Seite öffnen</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ALL 22 KEYWORDS QUICK-SWITCHER BAR (10/10 QUALITY SCORE DYNAMIC ROUTER) -->
+    <div class="bg-slate-900 border-b border-slate-800 py-2.5 px-4">
+        <div class="max-w-7xl mx-auto flex items-center gap-2 overflow-x-auto no-scrollbar text-xs whitespace-nowrap">
+            <span class="text-amber-400 font-bold inline-flex items-center gap-1.5 shrink-0 pr-2 border-r border-slate-700">
+                <i class="fa-solid fa-bolt"></i> 22 Spezial-Seiten:
+            </span>
                 <span class="hidden md:inline-flex items-center text-slate-300">
                     <i class="fa-solid fa-shield-halved text-wienRed-500 mr-1.5"></i> Handschlagqualität &amp; 100% Fixpreis-Garantie
                 </span>
