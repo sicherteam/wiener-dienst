@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vielen Dank für Ihre Anfrage! | Wiener Dienst</title>
+    <meta name="robots" content="noindex, follow">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        // Google Ads Conversion Event
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            event: 'google_ads_lead_conversion',
+            timestamp: new Date().toISOString()
+        });
+
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        wienRed: { 600: '#dc2626', 700: '#b91c1c' },
+                        navy: { 900: '#0f172a', 950: '#020617' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-navy-950 text-white min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-2xl w-full bg-slate-900 border border-slate-800 rounded-3xl p-8 sm:p-12 text-center shadow-2xl space-y-6">
+        <div class="w-20 h-20 rounded-full bg-emerald-500/20 border-2 border-emerald-400 text-emerald-400 flex items-center justify-center text-4xl mx-auto shadow-lg shadow-emerald-500/10">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl font-black tracking-tight text-white">
+            Vielen Dank! Ihre Anfrage ist erfolgreich bei uns eingegangen.
+        </h1>
+
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Unser Dispositions-Team von <strong>wiener-dienst.at</strong> prüft Ihre Angaben und ruft Sie in der Regel innerhalb der nächsten <strong>15 Minuten</strong> zurück, um alle Details oder einen kostenlosen Besichtigungstermin zu vereinbaren.
+        </p>
+
+        <div class="p-4 rounded-2xl bg-white/5 border border-white/10 text-xs sm:text-sm text-slate-300 text-left space-y-2">
+            <div class="font-bold text-amber-300 flex items-center gap-2">
+                <i class="fa-solid fa-camera"></i> Möchten Sie uns vorab Fotos senden?
+            </div>
+            <p>
+                Klicken Sie einfach unten auf WhatsApp und senden Sie uns ein paar Bilder der zu räumenden Räumlichkeiten oder Möbelstücke – so erhalten Sie noch schneller eine präzise Kosteneinschätzung!
+            </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+            <a href="https://wa.me/436604445617?text=Hallo%20Wiener%20Dienst!%20Ich%20habe%20gerade%20das%20Formular%20ausgef%C3%BCllt%20und%20sende%20hier%20Fotos." target="_blank" rel="noopener"
+               class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-6 py-4 rounded-2xl flex items-center justify-center gap-2 shadow-lg transition">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>Fotos per WhatsApp senden</span>
+            </a>
+            <a href="tel:+436604445617" class="bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold px-6 py-4 rounded-2xl flex items-center justify-center gap-2 shadow-lg transition">
+                <i class="fa-solid fa-phone"></i>
+                <span>Direkt anrufen: +43 660 444 5617</span>
+            </a>
+        </div>
+
+        <div class="pt-4 border-t border-slate-800">
+            <a href="index.html" class="text-xs font-bold text-slate-400 hover:text-white underline transition">
+                ← Zurück zur Startseite (wiener-dienst.at)
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
