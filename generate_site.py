@@ -11,13 +11,13 @@ from datetime import datetime
 
 # Common Configuration
 DOMAIN = "https://wiener-dienst.at"
-PHONE_DISPLAY = "+43 660 444 5617"
-PHONE_TEL = "+436604445617"
+PHONE_DISPLAY = "0660 606 0775"
+PHONE_TEL = "+436606060775"
 EMAIL = "office@wiener-dienst.at"
 FORMSPREE_ACTION = "https://formspree.io/f/mvkoaggb"
 
 # Vienna Shield SVG (Wiener Wappen: Red shield with white cross)
-VIENNA_SHIELD_SVG = """<svg class="w-10 h-10 sm:w-11 sm:h-11 translate-y-[6px] shrink-0 drop-shadow-sm group-hover:scale-105 transition" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Wiener Wappen Kalkan Logo">
+VIENNA_SHIELD_SVG = """<svg class="w-10 h-10 sm:w-11 sm:h-11 translate-y-[3px] shrink-0 drop-shadow-sm group-hover:scale-105 transition" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Wiener Wappen Kalkan Logo">
     <path d="M8 8H92V72C92 98 50 116 50 116C50 116 8 98 8 72V8Z" fill="#DC2626" stroke="#991B1B" stroke-width="4"/>
     <rect x="42" y="20" width="16" height="76" fill="white" rx="1"/>
     <rect x="20" y="44" width="60" height="16" fill="white" rx="1"/>
@@ -31,7 +31,7 @@ KEYWORDS = [
         "badge": "Ihr Wiener Fachbetrieb Nr. 1 • 100% Fixpreis-Garantie",
         "h1": "Entrümpelung Wien",
         "title": "Entrümpelung Wien | Wiener Dienst – Räumungsfirma zum Fixpreis",
-        "meta_desc": "Professionelle Entrümpelung Wien zum garantierten Fixpreis. Kostenlose Besichtigung in allen 23 Bezirken, besenreine Übergabe & Wertanrechnung. ☎ +43 660 444 5617",
+        "meta_desc": "Professionelle Entrümpelung Wien zum garantierten Fixpreis. Kostenlose Besichtigung in allen 23 Bezirken, besenreine Übergabe & Wertanrechnung. ☎ 0660 606 0775",
         "category": "Räumung & Entrümpelung",
         "hero_lead": "Ihr verlässlicher Wiener Traditionsbetrieb für besenreine Räumungen und Entrümpelungen in allen 23 Wiener Gemeindebezirken. Keine versteckten Kosten, 0 € Anfahrt und persönliche Handschlagqualität.",
         "calc_default": "Wohnungentrümpelung wien",
@@ -56,7 +56,7 @@ KEYWORDS = [
         "badge": "Express-Service in allen 23 Bezirken • 0 € Anfahrt",
         "h1": "Wien Entrümpelung",
         "title": "Wien Entrümpelung | Wiener Dienst – Schnell, Günstig & Besenrein",
-        "meta_desc": "Ihre verlässliche Wien Entrümpelung zum transparenten Pauschalpreis. Wohnungen, Häuser, Keller & Gewerbe. Gratis Besichtigung! ☎ +43 660 444 5617",
+        "meta_desc": "Ihre verlässliche Wien Entrümpelung zum transparenten Pauschalpreis. Wohnungen, Häuser, Keller & Gewerbe. Gratis Besichtigung! ☎ 0660 606 0775",
         "category": "Räumung & Entrümpelung",
         "hero_lead": "Kompetente Partner für jede Wien Entrümpelung mit Fixpreis-Versprechen. Wir räumen blitzschnell, zuverlässig und hinterlassen jedes Objekt garantiert besenrein.",
         "calc_default": "Wohnungentrümpelung wien",
@@ -81,7 +81,7 @@ KEYWORDS = [
         "badge": "Zertifizierte Entrümpelung Firma Wien • 100% Versichert",
         "h1": "Entrümpelung firma",
         "title": "Entrümpelung firma Wien | Wiener Dienst – Geprüfter Fachbetrieb",
-        "meta_desc": "Geprüfte Entrümpelung firma in Wien mit Handschlagqualität. Fixpreis-Garantie, Wertanrechnung & 0 € Besichtigung. Jetzt anrufen: ☎ +43 660 444 5617",
+        "meta_desc": "Geprüfte Entrümpelung firma in Wien mit Handschlagqualität. Fixpreis-Garantie, Wertanrechnung & 0 € Besichtigung. Jetzt anrufen: ☎ 0660 606 0775",
         "category": "Fachbetrieb Wien",
         "hero_lead": "Als etablierte Entrümpelung firma in Wien bieten wir Ihnen Full-Service-Leistungen mit vollumfänglicher Betriebshaftpflichtversicherung und verbindlichen Pauschalpreisen.",
         "calc_default": "Wohnungentrümpelung wien",
@@ -106,7 +106,7 @@ KEYWORDS = [
         "badge": "Professionelle Räumung Wien • Schnell, Diskret & Günstig",
         "h1": "Räumung Wien",
         "title": "Räumung Wien | Wiener Dienst – Schnell & Besenrein zum Fixpreis",
-        "meta_desc": "Zuverlässige Räumung Wien vom Fachmann. Wohnungsräumung, Kellerräumung, Verlassenschaftsräumung mit Wertausgleich. Gratis Besichtigung! ☎ +43 660 444 5617",
+        "meta_desc": "Zuverlässige Räumung Wien vom Fachmann. Wohnungsräumung, Kellerräumung, Verlassenschaftsräumung mit Wertausgleich. Gratis Besichtigung! ☎ 0660 606 0775",
         "category": "Räumung & Entrümpelung",
         "hero_lead": "Professionelle Räumung Wien für Wohnungen, Häuser, Keller und Dachböden. Profitieren Sie von unserer Fixpreis-Garantie und kostenloser Besichtigung.",
         "calc_default": "Wohnungentrümpelung wien",
@@ -131,7 +131,7 @@ KEYWORDS = [
         "badge": "Ihre Nr. 1 Räumungsfirma in Wien • Handschlagqualität",
         "h1": "Räumungsfirma",
         "title": "Räumungsfirma Wien | Wiener Dienst – Seriös, Pünktlich, Fixpreis",
-        "meta_desc": "Ihre zuverlässige Räumungsfirma in Wien. Besenreine Räumung von Wohnungen, Kellern, Verlassenschaften. 0 € Besichtigung! ☎ +43 660 444 5617",
+        "meta_desc": "Ihre zuverlässige Räumungsfirma in Wien. Besenreine Räumung von Wohnungen, Kellern, Verlassenschaften. 0 € Besichtigung! ☎ 0660 606 0775",
         "category": "Fachbetrieb Wien",
         "hero_lead": "Als renommierte Räumungsfirma in Wien stehen wir für Verlässlichkeit, Schnelligkeit und absolute Preissicherheit. Jetzt kostenlose Besichtigung sichern!",
         "calc_default": "Wohnungentrümpelung wien",
@@ -156,7 +156,7 @@ KEYWORDS = [
         "badge": "Express Möbelabholung Wien • Schnell, Günstig & Bequem",
         "h1": "Möbel abholen lassen",
         "title": "Möbel abholen lassen Wien | Wiener Dienst – Schnell & Günstig",
-        "meta_desc": "Alte Möbel abholen lassen in Wien: Couch, Schrank, Bett, Küche & Sperrmüll. Schnell, bequem & zum günstigen Fixpreis ab 0 €. ☎ +43 660 444 5617",
+        "meta_desc": "Alte Möbel abholen lassen in Wien: Couch, Schrank, Bett, Küche & Sperrmüll. Schnell, bequem & zum günstigen Fixpreis ab 0 €. ☎ 0660 606 0775",
         "category": "Möbel & Sperrmüll",
         "hero_lead": "Sie möchten unkompliziert alte Möbel abholen lassen in Wien? Wir tragen Ihre Möbel direkt aus der Wohnung – egal welches Stockwerk – und entsorgen fachgerecht.",
         "calc_default": "Möbel abholen lassen",
@@ -181,7 +181,7 @@ KEYWORDS = [
         "badge": "Spezialist für Wohnungentrümpelung Wien • Besenrein",
         "h1": "Wohnungentrümpelung wien",
         "title": "Wohnungentrümpelung Wien | Wiener Dienst – Besenrein zum Fixpreis",
-        "meta_desc": "Seriöse Wohnungentrümpelung Wien. Gemeindewohnung, Eigentum, Mietwohnung besenrein geräumt. Kostenlose Besichtigung! ☎ +43 660 444 5617",
+        "meta_desc": "Seriöse Wohnungentrümpelung Wien. Gemeindewohnung, Eigentum, Mietwohnung besenrein geräumt. Kostenlose Besichtigung! ☎ 0660 606 0775",
         "category": "Wohnungsräumung",
         "hero_lead": "Ihre professionelle Wohnungentrümpelung wien mit Fixpreis-Garantie. Wir räumen Einzimmerwohnungen ebenso wie Großwohnungen zügig und absolut zuverlässig.",
         "calc_default": "Wohnungentrümpelung wien",
@@ -206,7 +206,7 @@ KEYWORDS = [
         "badge": "Wohnungsraumung Wien zum Fixpreis • Übergabegarantie",
         "h1": "Wohnungsraumung Wien",
         "title": "Wohnungsraumung Wien | Wiener Dienst – Pünktlich & Besenrein",
-        "meta_desc": "Fachgerechte Wohnungsraumung Wien für private und gewerbliche Kunden. Besenrein, termingerecht & mit Wertanrechnung. ☎ +43 660 444 5617",
+        "meta_desc": "Fachgerechte Wohnungsraumung Wien für private und gewerbliche Kunden. Besenrein, termingerecht & mit Wertanrechnung. ☎ 0660 606 0775",
         "category": "Wohnungsräumung",
         "hero_lead": "Verlässliche Wohnungsraumung Wien mit Qualitätsversprechen. Wir garantieren die besenreine Übergabe termingerecht für Hausverwaltung oder Eigentümer.",
         "calc_default": "Wohnungentrümpelung wien",
@@ -231,7 +231,7 @@ KEYWORDS = [
         "badge": "Keller Entrümpelung Wien • Schnell Platz schaffen",
         "h1": "Keller Entrümpelung",
         "title": "Keller Entrümpelung Wien | Wiener Dienst – Schnell & Günstig",
-        "meta_desc": "Keller Entrümpelung Wien zum Festpreis. Wir räumen feuchte Keller, enge Holzabteile & Brandschutzhindernisse besenrein. ☎ +43 660 444 5617",
+        "meta_desc": "Keller Entrümpelung Wien zum Festpreis. Wir räumen feuchte Keller, enge Holzabteile & Brandschutzhindernisse besenrein. ☎ 0660 606 0775",
         "category": "Keller & Dachboden",
         "hero_lead": "Befreien Sie Ihr Kellerabteil! Unsere Keller Entrümpelung in Wien schafft schnell wieder Ordnung – auch in feuchten, engen oder verwinkelten Kellern.",
         "calc_default": "Keller Entrümpelung",
@@ -256,7 +256,7 @@ KEYWORDS = [
         "badge": "Zuverlässige Keller Räumung Wien • Besenrein ab 140 €",
         "h1": "Keller Räumung",
         "title": "Keller Räumung Wien | Wiener Dienst – Fixpreis & Besenrein",
-        "meta_desc": "Professionelle Keller Räumung in ganz Wien. Schnelle Räumung von Kellerabteilen, Schutzräumen & Gewölben. 0 € Besichtigung! ☎ +43 660 444 5617",
+        "meta_desc": "Professionelle Keller Räumung in ganz Wien. Schnelle Räumung von Kellerabteilen, Schutzräumen & Gewölben. 0 € Besichtigung! ☎ 0660 606 0775",
         "category": "Keller & Dachboden",
         "hero_lead": "Effiziente Keller Räumung in allen 23 Wiener Bezirken. Wir räumen Altbaukeller, Gewölbe und moderne Kellerboxen besenrein zum verbindlichen Pauschalpreis.",
         "calc_default": "Keller Entrümpelung",
@@ -281,7 +281,7 @@ KEYWORDS = [
         "badge": "Verlassenschaften Wien mit Wertanrechnung • Seriös & Diskret",
         "h1": "Verlassenschaften Wien",
         "title": "Verlassenschaften Wien | Wiener Dienst – Räumung & Ankauf",
-        "meta_desc": "Diskrete Abwicklung von Verlassenschaften Wien. Räumung, Ankauf & hohe Wertanrechnung für Antiquitäten, Möbel, Kunst. ☎ +43 660 444 5617",
+        "meta_desc": "Diskrete Abwicklung von Verlassenschaften Wien. Räumung, Ankauf & hohe Wertanrechnung für Antiquitäten, Möbel, Kunst. ☎ 0660 606 0775",
         "category": "Verlassenschaft & Nachlass",
         "hero_lead": "Einfühlsame und professionelle Betreuung bei Verlassenschaften Wien. Wir bieten faire Wertermittlung, Gegenverrechnung und besenreine Räumung aus einer Hand.",
         "calc_default": "Verlassenschaften Wien",
@@ -306,7 +306,7 @@ KEYWORDS = [
         "badge": "Komplette Hausräumung Wien • Vom Keller bis zum Dach",
         "h1": "Hausräumung Wien",
         "title": "Hausräumung Wien | Wiener Dienst – Besenrein zum Fixpreis",
-        "meta_desc": "Komplette Hausräumung Wien & NÖ zum garantierten Fixpreis. Einfamilienhäuser, Villen, Gärten & Garagen. Gratis Besichtigung! ☎ +43 660 444 5617",
+        "meta_desc": "Komplette Hausräumung Wien & NÖ zum garantierten Fixpreis. Einfamilienhäuser, Villen, Gärten & Garagen. Gratis Besichtigung! ☎ 0660 606 0775",
         "category": "Haus & Großobjekt",
         "hero_lead": "Ganzheitliche Hausräumung Wien vom Fachbetrieb. Wir räumen Häuser, Dachböden, Schuppen und Garagen besenrein vor Verkauf oder Sanierung.",
         "calc_default": "Hausräumung Wien",
@@ -331,7 +331,7 @@ KEYWORDS = [
         "badge": "Haus Entrümpelung Wien & Umland • Besenrein garantiert",
         "h1": "Haus Entrümpelung Wien",
         "title": "Haus Entrümpelung Wien | Wiener Dienst – Festpreis-Garantie",
-        "meta_desc": "Zuverlässige Haus Entrümpelung Wien. Gründliche Räumung vom Keller bis zum Dachboden zum fairen Festpreis. Jetzt anfragen: ☎ +43 660 444 5617",
+        "meta_desc": "Zuverlässige Haus Entrümpelung Wien. Gründliche Räumung vom Keller bis zum Dachboden zum fairen Festpreis. Jetzt anfragen: ☎ 0660 606 0775",
         "category": "Haus & Großobjekt",
         "hero_lead": "Professionelle Haus Entrümpelung Wien mit Handschlagqualität. Wir machen Ihr Haus schnell wieder bezugs- oder verkaufsbereit.",
         "calc_default": "Hausräumung Wien",
@@ -356,7 +356,7 @@ KEYWORDS = [
         "badge": "Wiener Wohnen Spezialist • 100% Abnahmegarantie",
         "h1": "Gemeinde Wohnung Entrümpelung",
         "title": "Gemeinde Wohnung Entrümpelung | Wiener Wohnen Übergabe",
-        "meta_desc": "Gemeinde Wohnung Entrümpelung nach strengen Wiener Wohnen Richtlinien. Fliesen, Teppich, Küchen-Rückbau & besenrein. ☎ +43 660 444 5617",
+        "meta_desc": "Gemeinde Wohnung Entrümpelung nach strengen Wiener Wohnen Richtlinien. Fliesen, Teppich, Küchen-Rückbau & besenrein. ☎ 0660 606 0775",
         "category": "Wiener Wohnen",
         "hero_lead": "Experte für die Gemeinde Wohnung Entrümpelung in Wien. Wir kennen alle Vorgaben von Wiener Wohnen und garantieren eine mängelfreie Schlüsselübergabe.",
         "calc_default": "Gemeinde Wohnung Entrümpelung",
@@ -381,7 +381,7 @@ KEYWORDS = [
         "badge": "Dachbodenentrümpelung Wien • Brandschutz & Platzgewinn",
         "h1": "Dachbodenentrümpelung",
         "title": "Dachbodenentrümpelung Wien | Wiener Dienst – Schnell & Sicher",
-        "meta_desc": "Dachbodenentrümpelung Wien zum Festpreis. Wir räumen historische Dachböden, Taubenkot & Sperrmüll brandschutzgerecht. ☎ +43 660 444 5617",
+        "meta_desc": "Dachbodenentrümpelung Wien zum Festpreis. Wir räumen historische Dachböden, Taubenkot & Sperrmüll brandschutzgerecht. ☎ 0660 606 0775",
         "category": "Keller & Dachboden",
         "hero_lead": "Professionelle Dachbodenentrümpelung in Wien. Wir beräumen Dachböden sicher, zügig und vorschriftsgemäß nach Brandschutzauflagen.",
         "calc_default": "Dachbodenentrümpelung",
@@ -406,7 +406,7 @@ KEYWORDS = [
         "badge": "Gemeinde wohnungsräumung Wien • Wiener Wohnen konform",
         "h1": "Gemeinde wohnungsräumung",
         "title": "Gemeinde wohnungsräumung Wien | Wiener Dienst – Fixpreis",
-        "meta_desc": "Ihre Gemeinde wohnungsräumung in Wien mit besenreiner Übergabegarantie. Rückbau nach Richtlinien von Wiener Wohnen. ☎ +43 660 444 5617",
+        "meta_desc": "Ihre Gemeinde wohnungsräumung in Wien mit besenreiner Übergabegarantie. Rückbau nach Richtlinien von Wiener Wohnen. ☎ 0660 606 0775",
         "category": "Wiener Wohnen",
         "hero_lead": "Reibungslose Gemeinde wohnungsräumung in ganz Wien. Wir sorgen für die fristgerechte und beanstandungsfreie Rückgabe an Wiener Wohnen.",
         "calc_default": "Gemeinde Wohnung Entrümpelung",
@@ -431,7 +431,7 @@ KEYWORDS = [
         "badge": "Verlassenschaftsräumung Wien • Mit Sachwert-Ankauf",
         "h1": "Verlassenschaftsräumung",
         "title": "Verlassenschaftsräumung Wien | Wiener Dienst – Seriös & Fair",
-        "meta_desc": "Seriöse Verlassenschaftsräumung Wien mit fairer Wertanrechnung. Kostenlose Schätzung vor Ort für Antiquitäten & Nachlässe. ☎ +43 660 444 5617",
+        "meta_desc": "Seriöse Verlassenschaftsräumung Wien mit fairer Wertanrechnung. Kostenlose Schätzung vor Ort für Antiquitäten & Nachlässe. ☎ 0660 606 0775",
         "category": "Verlassenschaft & Nachlass",
         "hero_lead": "Einfühlsame und diskrete Verlassenschaftsräumung in Wien. Wir bewerten Antiquitäten und Nachlässe fair und rechnen diese direkt an.",
         "calc_default": "Verlassenschaften Wien",
@@ -456,7 +456,7 @@ KEYWORDS = [
         "badge": "Diskrete Verlassenschafts Entrümpelung Wien • Fixpreis",
         "h1": "Verlassenschafts Entrümpelung",
         "title": "Verlassenschafts Entrümpelung Wien | Wiener Dienst",
-        "meta_desc": "Kompetente Verlassenschafts Entrümpelung in Wien. Wertanrechnung, diskrete Räumung & besenreine Übergabe zum Fixpreis. ☎ +43 660 444 5617",
+        "meta_desc": "Kompetente Verlassenschafts Entrümpelung in Wien. Wertanrechnung, diskrete Räumung & besenreine Übergabe zum Fixpreis. ☎ 0660 606 0775",
         "category": "Verlassenschaft & Nachlass",
         "hero_lead": "Ihre verlässliche Verlassenschafts Entrümpelung in Wien. Wir entlasten Angehörige umfassend und sorgen für transparente Abwicklung.",
         "calc_default": "Verlassenschaften Wien",
@@ -481,7 +481,7 @@ KEYWORDS = [
         "badge": "Nachlassräumung Wien • Würdevoll, Diskret & Fachgerecht",
         "h1": "Nachlassräumung",
         "title": "Nachlassräumung Wien | Wiener Dienst – Mit Wertausgleich",
-        "meta_desc": "Würdevolle Nachlassräumung in Wien mit Wertausgleich. Seriöse Schätzung, besenreine Räumung & Fixpreis-Garantie. ☎ +43 660 444 5617",
+        "meta_desc": "Würdevolle Nachlassräumung in Wien mit Wertausgleich. Seriöse Schätzung, besenreine Räumung & Fixpreis-Garantie. ☎ 0660 606 0775",
         "category": "Verlassenschaft & Nachlass",
         "hero_lead": "Pietätvolle und professionelle Nachlassräumung in Wien. Wir unterstützen Sie in schweren Zeiten mit verlässlicher Wertanrechnung und besenreiner Übergabe.",
         "calc_default": "Verlassenschaften Wien",
@@ -506,7 +506,7 @@ KEYWORDS = [
         "badge": "Nachlass Entrümpelung Wien • Schnell & Besenrein",
         "h1": "Nachlass Entrümpelung",
         "title": "Nachlass Entrümpelung Wien | Wiener Dienst – Fixpreis",
-        "meta_desc": "Diskrete Nachlass Entrümpelung in Wien. Schnelle Räumung von Nachlässen zum Festpreis mit Wertanrechnung. Gratis Angebot! ☎ +43 660 444 5617",
+        "meta_desc": "Diskrete Nachlass Entrümpelung in Wien. Schnelle Räumung von Nachlässen zum Festpreis mit Wertanrechnung. Gratis Angebot! ☎ 0660 606 0775",
         "category": "Verlassenschaft & Nachlass",
         "hero_lead": "Fachgerechte Nachlass Entrümpelung in ganz Wien. Wir sorgen für die schnelle, besenreine Beräumung von Nachlassimmobilien.",
         "calc_default": "Verlassenschaften Wien",
@@ -531,7 +531,7 @@ KEYWORDS = [
         "badge": "100% Diskrete Messie Räumung Wien • Ohne Vorurteile",
         "h1": "Messie Räumung",
         "title": "Messie Räumung Wien | Wiener Dienst – Diskret & Gründlich",
-        "meta_desc": "100% diskrete Messie Räumung Wien ohne Vorurteile. Professionelle Entrümpelung, Geruchsneutralisation & besenrein. ☎ +43 660 444 5617",
+        "meta_desc": "100% diskrete Messie Räumung Wien ohne Vorurteile. Professionelle Entrümpelung, Geruchsneutralisation & besenrein. ☎ 0660 606 0775",
         "category": "Spezialräumung",
         "hero_lead": "Diskrete, respektvolle Messie Räumung in Wien. Wir helfen schnell und unvoreingenommen bei extrem vollen oder vernachlässigten Wohnungen.",
         "calc_default": "Messie Entrümpelung",
@@ -556,7 +556,7 @@ KEYWORDS = [
         "badge": "Professionelle Messie Entrümpelung Wien • Schnelle Hilfe",
         "h1": "Messie Entrümpelung",
         "title": "Messie Entrümpelung Wien | Wiener Dienst – Respektvoll & Diskret",
-        "meta_desc": "Verständnisvolle Messie Entrümpelung Wien. Gründliche Räumung von Härtefällen zum fairen Festpreis. Kostenlose Erstberatung! ☎ +43 660 444 5617",
+        "meta_desc": "Verständnisvolle Messie Entrümpelung Wien. Gründliche Räumung von Härtefällen zum fairen Festpreis. Kostenlose Erstberatung! ☎ 0660 606 0775",
         "category": "Spezialräumung",
         "hero_lead": "Zuverlässige Messie Entrümpelung in allen 23 Wiener Bezirken. Wir schaffen wieder Licht, Luft und Ordnung – schnell, diskret und professionell.",
         "calc_default": "Messie Entrümpelung",
@@ -1587,7 +1587,7 @@ def build_index_page():
     item = KEYWORDS[0] # Default to Entrümpelung Wien for primary index
     kw = "Entrümpelung Wien"
     title = "Entrümpelung Wien & Räumungsfirma | Wiener Dienst – Besenrein zum Fixpreis"
-    meta_desc = "Ihre seriöse Entrümpelung Firma & Räumungsfirma in Wien. Kostenlose Besichtigung in allen 23 Bezirken, besenreine Übergabe, Fixpreis-Garantie & Wertanrechnung. ☎ +43 660 444 5617"
+    meta_desc = "Ihre seriöse Entrümpelung Firma & Räumungsfirma in Wien. Kostenlose Besichtigung in allen 23 Bezirken, besenreine Übergabe, Fixpreis-Garantie & Wertanrechnung. ☎ 0660 606 0775"
     
     wa_msg = "Hallo Wiener Dienst! Ich bitte um ein unverbindliches Angebot für eine Entrümpelung in Wien."
     wa_encoded = wa_msg.replace(" ", "%20")
@@ -2048,7 +2048,7 @@ def build_index_page():
 def build_kontakt_page():
     """Generates the dedicated kontakt.html page."""
     title = "Kontakt & Besichtigung | Wiener Dienst – Räumungsfirma Wien"
-    meta_desc = "Kontaktieren Sie Wiener Dienst für Ihre Entrümpelung & Räumung in Wien. Kostenlose Vor-Ort-Besichtigung in allen 23 Bezirken. ☎ +43 660 444 5617"
+    meta_desc = "Kontaktieren Sie Wiener Dienst für Ihre Entrümpelung & Räumung in Wien. Kostenlose Vor-Ort-Besichtigung in allen 23 Bezirken. ☎ 0660 606 0775"
     
     wa_msg = "Hallo Wiener Dienst! Ich möchte eine kostenlose Besichtigung in Wien anfragen."
     wa_encoded = wa_msg.replace(" ", "%20")
