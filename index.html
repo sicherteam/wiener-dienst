@@ -10,6 +10,8 @@
     <meta name="keywords" content="Entrümpelung Wien, Entrümpelung firma, Räumung Wien, Räumungsfirma, Möbel abholen lassen, Wohnungentrümpelung wien, Wohnungsraumung Wien, Keller Entrümpelung, Keller Räumung, Verlassenschaften Wien, Hausräumung Wien, Haus Entrümpelung Wien, Gemeinde Wohnung Entrümpelung, Dachbodenentrümpelung, Gemeinde wohnungsräumung, Wien Entrümpelung, Verlassenschaftsräumung, Verlassenschafts Entrümpelung, Nachlassräumung, Nachlass Entrümpelung, Messie Räumung, Messie Entrümpelung">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://wiener-dienst.at/">
+    <!-- Wiener Wappen / Shield Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 115'%3E%3Cpath d='M8 6 H92 V48 C92 80 50 106 50 109 C50 106 8 80 8 48 Z' fill='%23ffffff'/%3E%3Cpath d='M12 10 H43 V46 H12 Z' fill='%23ff0000'/%3E%3Cpath d='M57 10 H88 V46 H57 Z' fill='%23ff0000'/%3E%3Cpath d='M12 58 H43 V100 C26 89 13 74 12 58 Z' fill='%23ff0000'/%3E%3Cpath d='M57 58 H88 C87 74 74 89 57 100 Z' fill='%23ff0000'/%3E%3C/svg%3E">
 
     <!-- Open Graph / Social -->
     <meta property="og:title" content="Wiener Dienst | Entrümpelung Wien & Räumungsfirma Nr. 1">
@@ -183,61 +185,67 @@
 
     <!-- STICKY HEADER / NAVIGATION (STRICT SINGLE-LINE UI/UX) -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/90">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3 xl:gap-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 xl:gap-4 whitespace-nowrap">
             
-            <!-- Brand Logo (Guaranteed Single-Line Subtitle) -->
+            <!-- Brand Logo with Exact Wiener Shield + Single-Line Subtitle -->
             <a href="#top" onclick="showPage('home')" class="flex items-center gap-3 group shrink-0">
-                <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-wienRed-600 to-wienRed-800 flex items-center justify-center text-white shadow-md shadow-wienRed-600/20 group-hover:scale-105 transition shrink-0">
-                    <i class="fa-solid fa-truck-ramp-box text-xl sm:text-2xl"></i>
+                <div class="w-11 h-12 flex items-center justify-center translate-y-[6px] group-hover:scale-105 transition shrink-0">
+                    <svg viewBox="0 0 100 114" class="w-10 h-11 drop-shadow-sm" role="img" aria-label="Wiener Dienst Wappen Logo">
+                        <!-- Red Shield Quadrants with White Cross -->
+                        <path d="M10 6 H44 V45 H10 Z" fill="#ff0000"/>
+                        <path d="M56 6 H90 V45 H56 Z" fill="#ff0000"/>
+                        <path d="M10 57 H44 V106 C24 94 11 77 10 57 Z" fill="#ff0000"/>
+                        <path d="M56 57 H90 C89 77 76 94 56 106 Z" fill="#ff0000"/>
+                    </svg>
                 </div>
                 <div class="flex flex-col justify-center shrink-0">
                     <div class="flex items-center gap-1 leading-none">
-                        <span class="text-lg sm:text-2xl font-black tracking-tight text-navy-900 whitespace-nowrap">WIENER</span>
-                        <span class="text-lg sm:text-2xl font-black tracking-tight text-wienRed-600 whitespace-nowrap">DIENST</span>
+                        <span class="text-lg sm:text-xl xl:text-2xl font-black tracking-tight text-navy-900 whitespace-nowrap">WIENER</span>
+                        <span class="text-lg sm:text-xl xl:text-2xl font-black tracking-tight text-wienRed-600 whitespace-nowrap">DIENST</span>
                     </div>
-                    <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-500 whitespace-nowrap leading-none mt-1.5">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 whitespace-nowrap leading-none mt-1">
                         Entrümpelung &amp; Räumungsfirma Wien
                     </span>
                 </div>
             </a>
 
             <!-- Desktop Navigation Links (Strictly 1 Row, Never Wraps) -->
-            <nav class="hidden lg:flex items-center justify-center gap-1 xl:gap-1.5 text-[13px] xl:text-sm font-semibold text-slate-700 whitespace-nowrap shrink-0">
-                <button onclick="showPage('home')" id="nav-btn-home" class="px-3 py-2 rounded-lg text-wienRed-600 bg-wienRed-50 font-bold transition whitespace-nowrap">
+            <nav class="hidden lg:flex items-center justify-center gap-0.5 xl:gap-1 text-xs xl:text-[13px] font-bold text-slate-700 whitespace-nowrap shrink-0">
+                <button onclick="showPage('home')" id="nav-btn-home" class="px-2.5 py-2 rounded-lg text-wienRed-600 bg-wienRed-50 transition whitespace-nowrap">
                     Startseite
                 </button>
-                <a href="#preisrechner" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition inline-flex items-center gap-1.5 whitespace-nowrap">
+                <a href="#preisrechner" onclick="showPage('home')" class="px-2.5 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition inline-flex items-center gap-1.5 whitespace-nowrap">
                     <i class="fa-solid fa-calculator text-wienRed-600 text-xs"></i>
                     <span>Preisrechner</span>
                 </a>
-                <a href="#leistungen" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
+                <a href="#leistungen" onclick="showPage('home')" class="px-2.5 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
                     Leistungen
                 </a>
-                <a href="#keyword-index" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
+                <a href="#keyword-index" onclick="showPage('home')" class="px-2.5 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
                     22 Spezial-Seiten
                 </a>
-                <a href="#faq" onclick="showPage('home')" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
+                <a href="#faq" onclick="showPage('home')" class="px-2.5 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">
                     FAQ
                 </a>
-                <button onclick="showPage('kontakt')" id="nav-btn-kontakt" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition inline-flex items-center gap-1.5 whitespace-nowrap">
+                <button onclick="showPage('kontakt')" id="nav-btn-kontakt" class="px-2.5 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition inline-flex items-center gap-1.5 whitespace-nowrap">
                     <i class="fa-regular fa-address-card text-wienRed-600"></i>
                     <span>Kontakt</span>
                 </button>
             </nav>
 
-            <!-- Header Conversion CTAs (Strictly 1 Row, Shrink-0) -->
-            <div class="flex items-center gap-2 shrink-0">
+            <!-- Header Conversion CTAs (EQUAL WIDTH & EQUAL HEIGHT) -->
+            <div class="flex items-center gap-2.5 shrink-0 whitespace-nowrap">
                 <a href="https://wa.me/436604445617?text=Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20unverbindliches%20Angebot%20f%C3%BCr%20eine%20Entr%C3%BCmpelung%20in%20Wien." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
-                   class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs xl:text-sm px-3.5 py-2.5 rounded-xl shadow-sm transition whitespace-nowrap shrink-0">
-                    <i class="fa-brands fa-whatsapp text-base"></i>
-                    <span>WhatsApp</span>
+                   class="hidden sm:inline-flex items-center justify-center gap-2 w-[168px] h-11 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs xl:text-[13px] rounded-xl shadow-sm transition whitespace-nowrap shrink-0">
+                    <i class="fa-brands fa-whatsapp text-base shrink-0"></i>
+                    <span class="whitespace-nowrap">WhatsApp Chat</span>
                 </a>
                 <a href="tel:+436604445617" onclick="trackConversion('phone_click')"
-                   class="inline-flex items-center gap-2 bg-wienRed-600 hover:bg-wienRed-700 text-white font-bold text-xs xl:text-sm px-3.5 sm:px-4 py-2.5 rounded-xl shadow-md shadow-wienRed-600/25 transition whitespace-nowrap shrink-0">
-                    <i class="fa-solid fa-phone ring-icon"></i>
-                    <span>+43 660 444 5617</span>
+                   class="inline-flex items-center justify-center gap-2 w-[168px] h-11 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-xs xl:text-[13px] rounded-xl shadow-md shadow-wienRed-600/25 transition whitespace-nowrap shrink-0">
+                    <i class="fa-solid fa-phone ring-icon shrink-0"></i>
+                    <span class="whitespace-nowrap">+43 660 444 5617</span>
                 </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 shrink-0" aria-label="Menü">
+                <button onclick="toggleMobileMenu()" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 shrink-0" aria-label="Menü">
                     <i class="fa-solid fa-bars text-lg"></i>
                 </button>
             </div>
@@ -266,109 +274,9 @@
     </header>
 
     <!-- ALL 22 KEYWORDS QUICK-SWITCHER BAR (10/10 QUALITY SCORE DYNAMIC ROUTER) -->
-    <div class="bg-slate-900 border-b border-slate-800 py-2.5 px-4">
-        <div class="max-w-7xl mx-auto flex items-center gap-2 overflow-x-auto no-scrollbar text-xs whitespace-nowrap">
-            <span class="text-amber-400 font-bold inline-flex items-center gap-1.5 shrink-0 pr-2 border-r border-slate-700">
-                <i class="fa-solid fa-bolt"></i> 22 Spezial-Seiten:
-            </span>
-                <span class="hidden md:inline-flex items-center text-slate-300">
-                    <i class="fa-solid fa-shield-halved text-wienRed-500 mr-1.5"></i> Handschlagqualität &amp; 100% Fixpreis-Garantie
-                </span>
-            </div>
-            <div class="flex items-center space-x-4 ml-auto">
-                <a href="mailto:office@wiener-dienst.at" onclick="trackConversion('email_click')" class="hover:text-wienRed-500 transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-envelope text-wienRed-500"></i>
-                    <span>office@wiener-dienst.at</span>
-                </a>
-                <span class="text-slate-600">|</span>
-                <a href="tel:+436604445617" onclick="trackConversion('phone_click')" class="font-bold text-amber-400 hover:text-amber-300 transition flex items-center gap-1.5">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <span>+43 660 444 5617</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- STICKY HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo -->
-            <a href="#top" onclick="showPage('home')" class="flex items-center gap-3 group">
-                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-wienRed-600 to-wienRed-800 flex items-center justify-center text-white shadow-md shadow-wienRed-600/20 group-hover:scale-105 transition">
-                    <i class="fa-solid fa-truck-ramp-box text-2xl"></i>
-                </div>
-                <div>
-                    <div class="flex items-center gap-1">
-                        <span class="text-xl sm:text-2xl font-black tracking-tight text-navy-900">WIENER</span>
-                        <span class="text-xl sm:text-2xl font-black tracking-tight text-wienRed-600">DIENST</span>
-                    </div>
-                    <p class="text-[11px] font-semibold uppercase tracking-wider text-slate-500 -mt-1">Entrümpelung &amp; Räumungsfirma Wien</p>
-                </div>
-            </a>
-
-            <!-- Desktop Navigation Links -->
-            <nav class="hidden lg:flex items-center space-x-5 text-sm font-semibold text-slate-700">
-                <button onclick="showPage('home')" id="nav-btn-home" class="text-wienRed-600 font-bold py-2 border-b-2 border-wienRed-600 transition">
-                    Startseite (Index)
-                </button>
-                <a href="#preisrechner" onclick="showPage('home')" class="hover:text-wienRed-600 transition py-2 flex items-center gap-1">
-                    <i class="fa-solid fa-calculator text-wienRed-600 text-xs"></i> Online-Preisrechner
-                </a>
-                <a href="#leistungen" onclick="showPage('home')" class="hover:text-wienRed-600 transition py-2">
-                    Leistungen
-                </a>
-                <a href="#keyword-index" onclick="showPage('home')" class="hover:text-wienRed-600 transition py-2">
-                    Alle 22 Spezial-Seiten
-                </a>
-                <a href="#faq" onclick="showPage('home')" class="hover:text-wienRed-600 transition py-2">
-                    FAQ
-                </a>
-                <button onclick="showPage('kontakt')" id="nav-btn-kontakt" class="hover:text-wienRed-600 transition py-2 flex items-center gap-1.5">
-                    <i class="fa-regular fa-address-card text-wienRed-600"></i> Kontakt-Seite
-                </button>
-            </nav>
-
-            <!-- Header Conversion CTAs -->
-            <div class="flex items-center gap-2.5">
-                <a href="https://wa.me/436604445617?text=Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20unverbindliches%20Angebot%20f%C3%BCr%20eine%20Entr%C3%BCmpelung%20in%20Wien." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
-                   class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-sm transition">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>WhatsApp</span>
-                </a>
-                <a href="tel:+436604445617" onclick="trackConversion('phone_click')"
-                   class="inline-flex items-center gap-2 bg-wienRed-600 hover:bg-wienRed-700 text-white font-bold text-sm px-4 py-2.5 rounded-xl shadow-md shadow-wienRed-600/25 transition">
-                    <i class="fa-solid fa-phone ring-icon"></i>
-                    <span>+43 660 444 5617</span>
-                </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100" aria-label="Menü">
-                    <i class="fa-solid fa-bars text-xl"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-5 space-y-2 shadow-xl">
-            <button onclick="showPage('home'); toggleMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-lg font-bold text-navy-900 hover:bg-slate-100 flex items-center justify-between">
-                <span><i class="fa-solid fa-house text-wienRed-600 mr-2"></i> Startseite (Index)</span>
-                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
-            </button>
-            <a href="#preisrechner" onclick="showPage('home'); toggleMobileMenu();" class="block px-3 py-2.5 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">
-                <i class="fa-solid fa-calculator text-wienRed-600 mr-2"></i> Interaktiver Preisrechner
-            </a>
-            <a href="#keyword-index" onclick="showPage('home'); toggleMobileMenu();" class="block px-3 py-2.5 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">
-                <i class="fa-solid fa-layer-group text-wienRed-600 mr-2"></i> Alle 22 Keyword-Zielseiten
-            </a>
-            <button onclick="showPage('kontakt'); toggleMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-lg font-bold text-wienRed-600 bg-wienRed-50 hover:bg-wienRed-100 flex items-center justify-between">
-                <span><i class="fa-solid fa-headset mr-2"></i> Kontakt-Seite öffnen</span>
-                <i class="fa-solid fa-arrow-right text-xs"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- ALL 22 KEYWORDS QUICK-SWITCHER BAR (10/10 QUALITY SCORE DYNAMIC ROUTER) -->
     <div class="bg-slate-900 border-b border-slate-800 py-2 px-4">
-        <div class="max-w-7xl mx-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs">
-            <span class="text-amber-400 font-bold whitespace-nowrap flex items-center gap-1 shrink-0 mr-1">
+        <div class="max-w-7xl mx-auto flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs whitespace-nowrap">
+            <span class="text-amber-400 font-bold whitespace-nowrap flex items-center gap-1 shrink-0 mr-1 pr-2 border-r border-slate-700">
                 <i class="fa-solid fa-bolt"></i> 22 Spezial-Seiten Direktwahl:
             </span>
             <button onclick="openDedicatedKeywordPage('Entrümpelung Wien')" class="kw-chip shrink-0 px-2.5 py-1 rounded-md bg-wienRed-600 text-white font-semibold transition">Entrümpelung Wien</button>
@@ -461,21 +369,26 @@
                             </div>
                         </div>
 
-                        <!-- Immediate Conversion Buttons -->
-                        <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
-                            <a href="tel:+436604445617" onclick="trackConversion('phone_click')" class="flex-1 inline-flex items-center justify-center gap-3 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-base sm:text-lg px-6 py-4 rounded-2xl shadow-lg shadow-wienRed-600/30 transition transform hover:-translate-y-0.5">
-                                <i class="fa-solid fa-phone-volume text-xl ring-icon"></i>
-                                <div class="text-left">
-                                    <span class="block text-[11px] uppercase tracking-wider font-semibold text-wienRed-100">Sofort-Termin &amp; Auskunft</span>
-                                    <span>+43 660 444 5617</span>
+                        <!-- Immediate Conversion Buttons (STRICTLY EQUAL WIDTH & EQUAL HEIGHT) -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <a href="tel:+436604445617" onclick="trackConversion('phone_click')"
+                               class="w-full h-[68px] inline-flex items-center justify-center gap-3.5 bg-wienRed-600 hover:bg-wienRed-700 text-white px-5 rounded-2xl shadow-lg shadow-wienRed-600/30 transition transform hover:-translate-y-0.5 whitespace-nowrap">
+                                <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-phone-volume text-lg ring-icon"></i>
+                                </div>
+                                <div class="text-left leading-tight">
+                                    <span class="block text-[10px] uppercase tracking-wider font-bold text-wienRed-100">Sofort-Termin &amp; Auskunft</span>
+                                    <span class="text-base sm:text-lg font-black tracking-tight">+43 660 444 5617</span>
                                 </div>
                             </a>
                             <a href="https://wa.me/436604445617?text=Hallo%20Wiener%20Dienst!%20Ich%20habe%20eine%20Anfrage%20zur%20Entr%C3%BCmpelung%20Wien." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
-                               class="flex-1 inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-base sm:text-lg px-6 py-4 rounded-2xl shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
-                                <i class="fa-brands fa-whatsapp text-2xl"></i>
-                                <div class="text-left">
-                                    <span class="block text-[11px] uppercase tracking-wider font-semibold text-emerald-100">Fotos senden = Sofort-Preis</span>
-                                    <span>WhatsApp Direkt-Chat</span>
+                               class="w-full h-[68px] inline-flex items-center justify-center gap-3.5 bg-emerald-600 hover:bg-emerald-700 text-white px-5 rounded-2xl shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5 whitespace-nowrap">
+                                <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center shrink-0">
+                                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                </div>
+                                <div class="text-left leading-tight">
+                                    <span class="block text-[10px] uppercase tracking-wider font-bold text-emerald-100">Fotos senden = Sofort-Preis</span>
+                                    <span class="text-base sm:text-lg font-black tracking-tight">WhatsApp Direkt-Chat</span>
                                 </div>
                             </a>
                         </div>
@@ -594,7 +507,7 @@
                         <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
                             <label class="block text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">1. Was soll geräumt werden?</label>
                             <select id="calc-type" onchange="updateCalculator()" class="w-full bg-slate-800 text-white border border-slate-700 rounded-xl px-3.5 py-3 text-sm font-semibold outline-none focus:border-amber-400">
-                                <option value="Wohnungentrümpelung wien" data-base="390">Wohnungentrümpelung Wien</option>
+                                <option value="Wohnungsentrümpelung Wien" data-base="390">Wohnungsentrümpelung Wien</option>
                                 <option value="Gemeinde Wohnung Entrümpelung" data-base="390">Gemeinde Wohnung Entrümpelung</option>
                                 <option value="Verlassenschaften Wien" data-base="0">Verlassenschaften Wien (Wertausgleich)</option>
                                 <option value="Hausräumung Wien" data-base="790">Hausräumung Wien / Haus Entrümpelung</option>
@@ -609,10 +522,10 @@
                         <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
                             <label class="block text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">2. Geschätzte Größe / Menge</label>
                             <select id="calc-size" onchange="updateCalculator()" class="w-full bg-slate-800 text-white border border-slate-700 rounded-xl px-3.5 py-3 text-sm font-semibold outline-none focus:border-amber-400">
-                                <option value="Klein (1-20 m² / wenige Stücke)" data-mult="1">Klein (bis 20 m² / Einzelmöbel)</option>
-                                <option value="Mittel (25-65 m² / 2-3 Zimmer)" data-mult="1.6" selected>Mittel (25–65 m² / 2–3 Zimmer)</option>
-                                <option value="Groß (70-120 m² / 4+ Zimmer)" data-mult="2.4">Groß (70–120 m² / großes Objekt)</option>
-                                <option value="Kompletthaus / Großobjekt" data-mult="3.2">Kompletthaus / Gewerbeobjekt</option>
+                                <option value="Klein: bis 20 m² (Einzelstücke)" data-mult="1">Klein: bis 20 m² (Einzelstücke)</option>
+                                <option value="Mittel: 25–65 m² (2–3 Zimmer)" data-mult="1.6" selected>Mittel: 25–65 m² (2–3 Zimmer)</option>
+                                <option value="Groß: 70–120 m² (4+ Zimmer)" data-mult="2.4">Groß: 70–120 m² (4+ Zimmer)</option>
+                                <option value="Großobjekt / Kompletthaus" data-mult="3.2">Großobjekt / Kompletthaus</option>
                             </select>
                         </div>
 
@@ -620,28 +533,45 @@
                         <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
                             <label class="block text-xs font-bold uppercase tracking-wider text-amber-400 mb-2">3. Wertgegenstände vorhanden?</label>
                             <select id="calc-value" onchange="updateCalculator()" class="w-full bg-slate-800 text-white border border-slate-700 rounded-xl px-3.5 py-3 text-sm font-semibold outline-none focus:border-amber-400">
-                                <option value="Keine Wertanrechnung">Keine verwertbaren Gegenstände</option>
-                                <option value="Gut erhaltene Möbel / Hausrat">Gut erhaltene Möbel / Elektrogeräte</option>
-                                <option value="Antiquitäten / Schmuck / Gemälde (Hohe Wertanrechnung)">Antiquitäten / Sammlerstücke / Nachlass</option>
+                                <option value="Ohne Wertanrechnung">Keine verwertbaren Gegenstände</option>
+                                <option value="Mit Möbel-Gegenverrechnung">Gut erhaltene Möbel / Elektrogeräte</option>
+                                <option value="Hohe Wertanrechnung (Antiquitäten / Nachlass)">Antiquitäten / Sammlerstücke / Nachlass</option>
                             </select>
                         </div>
                     </div>
 
-                    <!-- Calculator Result Bar -->
-                    <div class="mt-6 bg-white/10 border border-white/15 rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-4">
-                        <div>
-                            <div class="text-xs uppercase tracking-wider text-slate-300 font-semibold">Unverbindliche Orientierung &amp; Status:</div>
-                            <div id="calc-output-text" class="text-lg sm:text-xl font-black text-amber-300 mt-0.5">
-                                Kostenlose Besichtigung + Fixpreis vor Ort (Bei Wertausgleich oft ab 0 €!)
+                    <!-- Clean Calculator Result Box with Equal Action Buttons -->
+                    <div class="mt-6 bg-white/10 border border-white/15 rounded-2xl p-5 sm:p-6 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+                        <div class="space-y-2.5 flex-1">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <span id="calc-badge-service" class="px-3 py-1 rounded-lg bg-wienRed-600 text-white text-xs font-extrabold tracking-wide">
+                                    Wohnungsentrümpelung Wien
+                                </span>
+                                <span id="calc-badge-size" class="px-3 py-1 rounded-lg bg-white/10 text-slate-200 text-xs font-semibold border border-white/10">
+                                    Mittel: 25–65 m² (2–3 Zimmer)
+                                </span>
+                                <span id="calc-badge-value" class="px-3 py-1 rounded-lg bg-amber-400/20 text-amber-300 text-xs font-semibold border border-amber-400/30">
+                                    Ohne Wertanrechnung
+                                </span>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 pt-1">
+                                <div id="calc-price-highlight" class="text-2xl sm:text-3xl font-black text-amber-300 tracking-tight">
+                                    Richtwert: ab ca. 620 €
+                                </div>
+                                <div id="calc-sub-note" class="text-xs sm:text-sm text-slate-300 font-medium">
+                                    <i class="fa-solid fa-circle-check text-emerald-400 mr-1"></i> Inkl. 0 € Anfahrt in Wien &amp; Fixpreis nach Gratis-Besichtigung
+                                </div>
                             </div>
                         </div>
-                        <div class="flex flex-wrap gap-3 w-full md:w-auto">
-                            <button onclick="applyCalculatorToForm()" class="flex-1 md:flex-initial bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-xs sm:text-sm px-5 py-3.5 rounded-xl transition">
-                                Auswahl ins Formular übernehmen
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full lg:w-[440px] shrink-0">
+                            <button onclick="applyCalculatorToForm()" class="w-full h-12 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-xs sm:text-sm px-4 rounded-xl transition flex items-center justify-center gap-2 whitespace-nowrap shadow-md">
+                                <i class="fa-solid fa-file-import"></i>
+                                <span>Ins Formular übernehmen</span>
                             </button>
                             <a id="calc-wa-btn" href="https://wa.me/436604445617" target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
-                               class="flex-1 md:flex-initial bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm px-5 py-3.5 rounded-xl transition flex items-center justify-center gap-2">
-                                <i class="fa-brands fa-whatsapp text-base"></i> Per WhatsApp senden
+                               class="w-full h-12 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm px-4 rounded-xl transition flex items-center justify-center gap-2 whitespace-nowrap shadow-md">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span>Per WhatsApp senden</span>
                             </a>
                         </div>
                     </div>
@@ -874,14 +804,14 @@
                         
                         <ul id="subpage-bullets" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm font-semibold text-white pt-2"></ul>
 
-                        <div class="flex flex-col sm:flex-row gap-3 pt-3">
-                            <a href="tel:+436604445617" onclick="trackConversion('phone_click')" class="bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold px-6 py-4 rounded-2xl text-center flex items-center justify-center gap-2 shadow-lg">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                            <a href="tel:+436604445617" onclick="trackConversion('phone_click')" class="w-full h-14 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold px-5 rounded-2xl text-center flex items-center justify-center gap-2.5 shadow-lg whitespace-nowrap">
                                 <i class="fa-solid fa-phone-volume ring-icon"></i>
-                                <span>Sofort-Hilfe: +43 660 444 5617</span>
+                                <span>+43 660 444 5617</span>
                             </a>
-                            <a id="subpage-wa-btn" href="https://wa.me/436604445617" target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')" class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-6 py-4 rounded-2xl text-center flex items-center justify-center gap-2 shadow-lg">
+                            <a id="subpage-wa-btn" href="https://wa.me/436604445617" target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')" class="w-full h-14 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold px-5 rounded-2xl text-center flex items-center justify-center gap-2.5 shadow-lg whitespace-nowrap">
                                 <i class="fa-brands fa-whatsapp text-xl"></i>
-                                <span>WhatsApp Sofort-Angebot</span>
+                                <span>WhatsApp Direkt-Chat</span>
                             </a>
                         </div>
                     </div>
@@ -1070,7 +1000,15 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <div class="text-lg font-black text-white mb-2">WIENER <span class="text-wienRed-500">DIENST</span></div>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <svg viewBox="0 0 100 114" class="w-7 h-8 translate-y-[2px] shrink-0" role="img" aria-label="Wiener Dienst Wappen">
+                            <path d="M10 6 H44 V45 H10 Z" fill="#ff0000"/>
+                            <path d="M56 6 H90 V45 H56 Z" fill="#ff0000"/>
+                            <path d="M10 57 H44 V106 C24 94 11 77 10 57 Z" fill="#ff0000"/>
+                            <path d="M56 57 H90 C89 77 76 94 56 106 Z" fill="#ff0000"/>
+                        </svg>
+                        <div class="text-lg font-black text-white">WIENER <span class="text-wienRed-500">DIENST</span></div>
+                    </div>
                     <p class="leading-relaxed mb-3">
                         Ihre geprüfte <strong>Entrümpelung firma</strong> &amp; <strong>Räumungsfirma</strong> in Wien (1010–1230 Wien).
                     </p>
@@ -1126,25 +1064,22 @@
         </div>
     </div>
 
-    <!-- STICKY DESKTOP FLOATING WIDGET -->
-    <div class="hidden lg:flex fixed bottom-6 right-6 z-50 flex-col gap-3 items-end">
-        <a href="mailto:office@wiener-dienst.at" onclick="trackConversion('email_click')" class="flex items-center gap-3 bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs px-4 py-3 rounded-2xl shadow-xl border border-slate-700 transition">
-            <i class="fa-solid fa-envelope text-amber-400"></i>
-            <span>office@wiener-dienst.at</span>
+    <!-- STICKY DESKTOP FLOATING DOCK (EQUAL SIZE SLIDE-OUT BUTTONS) -->
+    <div class="hidden lg:flex fixed right-0 top-1/2 -translate-y-1/2 z-50 flex-col gap-2.5 items-end">
+        <a href="tel:+436604445617" onclick="trackConversion('phone_click')"
+           class="group flex items-center gap-3 w-[215px] h-12 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-xs pl-4 pr-4 rounded-l-2xl shadow-xl transition-all duration-300 translate-x-[162px] hover:translate-x-0 whitespace-nowrap">
+            <i class="fa-solid fa-phone-volume text-base ring-icon shrink-0 w-5 text-center"></i>
+            <span class="whitespace-nowrap">+43 660 444 5617</span>
         </a>
-        <a href="tel:+436604445617" onclick="trackConversion('phone_click')" class="flex items-center gap-3 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-sm px-5 py-3.5 rounded-2xl shadow-2xl transition">
-            <i class="fa-solid fa-phone-volume text-lg ring-icon"></i>
-            <div>
-                <span class="block text-[10px] uppercase font-semibold text-red-100 leading-none">Sofort Anrufen</span>
-                <span>+43 660 444 5617</span>
-            </div>
+        <a href="https://wa.me/436604445617?text=Hallo%20Wiener%20Dienst!%20Bitte%20um%20ein%20unverbindliches%20Angebot." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
+           class="group flex items-center gap-3 w-[215px] h-12 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs pl-4 pr-4 rounded-l-2xl shadow-xl transition-all duration-300 translate-x-[162px] hover:translate-x-0 whitespace-nowrap">
+            <i class="fa-brands fa-whatsapp text-lg shrink-0 w-5 text-center"></i>
+            <span class="whitespace-nowrap">WhatsApp Direkt</span>
         </a>
-        <a href="https://wa.me/436604445617?text=Hallo%20Wiener%20Dienst!%20Bitte%20um%20ein%20unverbindliches%20Angebot." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')" class="whatsapp-pulse flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm px-5 py-3.5 rounded-2xl shadow-2xl transition">
-            <i class="fa-brands fa-whatsapp text-2xl"></i>
-            <div>
-                <span class="block text-[10px] uppercase font-semibold text-emerald-100 leading-none">Fotos senden</span>
-                <span>WhatsApp Chat</span>
-            </div>
+        <a href="mailto:office@wiener-dienst.at" onclick="trackConversion('email_click')"
+           class="group flex items-center gap-3 w-[215px] h-12 bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs pl-4 pr-4 rounded-l-2xl shadow-xl border border-r-0 border-slate-700 transition-all duration-300 translate-x-[162px] hover:translate-x-0 whitespace-nowrap">
+            <i class="fa-solid fa-envelope text-amber-400 text-base shrink-0 w-5 text-center"></i>
+            <span class="whitespace-nowrap">office@wiener-dienst.at</span>
         </a>
     </div>
 
@@ -1272,35 +1207,48 @@
             const typeSelect = document.getElementById('calc-type');
             const sizeSelect = document.getElementById('calc-size');
             const valSelect = document.getElementById('calc-value');
-            const outText = document.getElementById('calc-output-text');
+            const badgeService = document.getElementById('calc-badge-service');
+            const badgeSize = document.getElementById('calc-badge-size');
+            const badgeValue = document.getElementById('calc-badge-value');
+            const priceHighlight = document.getElementById('calc-price-highlight');
+            const subNote = document.getElementById('calc-sub-note');
             const waBtn = document.getElementById('calc-wa-btn');
 
             const serviceName = typeSelect.value;
             const sizeName = sizeSelect.value;
             const valName = valSelect.value;
 
+            if (badgeService) badgeService.textContent = serviceName;
+            if (badgeSize) badgeSize.textContent = sizeName;
+            if (badgeValue) badgeValue.textContent = valName;
+
             if (valName.includes('Antiquitäten') || serviceName.includes('Verlassenschaften')) {
-                outText.textContent = `${serviceName}: Durch Wertanrechnung oft ab 0 € (Gratis-Räumung möglich!) – Jetzt Besichtigung sichern!`;
+                if (priceHighlight) priceHighlight.textContent = 'Richtwert: Oft ab 0 € (Wertausgleich)';
+                if (subNote) subNote.innerHTML = '<i class="fa-solid fa-coins text-amber-400 mr-1"></i> Direkte Gegenverrechnung bei Gratis-Besichtigung in Wien';
             } else {
                 const base = parseInt(typeSelect.selectedOptions[0].dataset.base || "150", 10);
                 const mult = parseFloat(sizeSelect.selectedOptions[0].dataset.mult || "1");
-                const estimate = Math.round((base * mult) / 10) * 10;
-                outText.textContent = `${serviceName} (${sizeName}): Richtwert ab ca. ${estimate} € inkl. Anfahrt & Entsorgung (Fixpreis nach Gratis-Besichtigung)`;
+                const discount = valName.includes('Möbel') ? 0.85 : 1;
+                const estimate = Math.round((base * mult * discount) / 10) * 10;
+                if (priceHighlight) priceHighlight.textContent = `Richtwert: ab ca. ${estimate} €`;
+                if (subNote) subNote.innerHTML = '<i class="fa-solid fa-circle-check text-emerald-400 mr-1"></i> Inkl. 0 € Anfahrt in Wien, Demontage & Fixpreis nach Gratis-Besichtigung';
             }
 
-            const msg = `Hallo Wiener Dienst! Meine Auswahl im Preisrechner: Leistung: ${serviceName}, Größe: ${sizeName}, Wertausgleich: ${valName}. Bitte um ein Angebot!`;
+            const msg = `Hallo Wiener Dienst! Meine Auswahl im Preisrechner: Leistung: ${serviceName} | Umfang: ${sizeName} | Wertausgleich: ${valName}. Bitte um ein Fixpreis-Angebot!`;
             waBtn.href = `https://wa.me/436604445617?text=${encodeURIComponent(msg)}`;
         }
 
         function applyCalculatorToForm() {
-            const serviceName = document.getElementById('calc-type').value;
+            const typeSelect = document.getElementById('calc-type');
+            const serviceKeyword = typeSelect.value;
+            const serviceLabel = typeSelect.selectedOptions[0].dataset.label || serviceKeyword;
             const sizeName = document.getElementById('calc-size').value;
             const valName = document.getElementById('calc-value').value;
 
             const selectEl = document.getElementById('hero-service-select');
             if (selectEl) {
                 for (let i = 0; i < selectEl.options.length; i++) {
-                    if (selectEl.options[i].value.toLowerCase().includes(serviceName.toLowerCase())) {
+                    if (selectEl.options[i].value.toLowerCase().includes(serviceKeyword.toLowerCase())) {
                         selectEl.selectedIndex = i;
                         break;
                     }
@@ -1308,7 +1256,7 @@
             }
             const msgBox = document.getElementById('hero-message-box');
             if (msgBox) {
-                msgBox.value = `Rechner-Auswahl: ${serviceName} | Umfang: ${sizeName} | Wertgegenstände: ${valName}`;
+                msgBox.value = `Auswahl Preisrechner: ${serviceLabel} | Größe: ${sizeName} | ${valName}`;
             }
             document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
             const nameInput = document.querySelector('#hero-lead-form input[name="name"]');
