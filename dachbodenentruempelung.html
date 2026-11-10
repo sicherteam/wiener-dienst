@@ -203,7 +203,7 @@
     </script>
     
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased pb-20 lg:pb-0 selection:bg-wienRed-600 selection:text-white">
+<body class="bg-slate-50 text-slate-900 antialiased pb-24 lg:pb-0 selection:bg-wienRed-600 selection:text-white">
 
     
     <!-- TOP URGENCY / TRUST BAR (SINGLE LINE) -->
@@ -272,19 +272,19 @@
     
             </nav>
 
-            <!-- Header Conversion CTAs (Equal Sized: w-[168px] h-11) -->
+            <!-- Header Conversion CTAs (Mobile-Optimized & Equal-Sized on Desktop) -->
             <div class="flex items-center gap-2 shrink-0">
                 <a href="https://wa.me/436606060775?text=Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20unverbindliches%20Fixpreis-Angebot%20f%C3%BCr%20eine%20R%C3%A4umung%20in%20Wien." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
-                   class="w-[168px] h-11 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs xl:text-sm rounded-xl shadow-sm transition whitespace-nowrap shrink-0 flex items-center justify-center gap-2">
+                   class="hidden sm:inline-flex w-[168px] h-11 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs xl:text-sm rounded-xl shadow-sm transition whitespace-nowrap shrink-0 items-center justify-center gap-2">
                     <i class="fa-brands fa-whatsapp text-lg"></i>
                     <span>WhatsApp</span>
                 </a>
                 <a href="tel:+436606060775" onclick="trackConversion('phone_click')"
-                   class="w-[168px] h-11 bg-wienRed-600 hover:bg-wienRed-700 text-white font-bold text-xs xl:text-sm rounded-xl shadow-md shadow-wienRed-600/25 transition whitespace-nowrap shrink-0 flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-phone ring-icon"></i>
-                    <span>0660 606 0775</span>
+                   class="w-11 h-11 sm:w-[168px] sm:h-11 bg-wienRed-600 hover:bg-wienRed-700 text-white font-bold text-xs xl:text-sm rounded-xl shadow-md shadow-wienRed-600/25 transition whitespace-nowrap shrink-0 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone ring-icon text-sm sm:text-base"></i>
+                    <span class="hidden sm:inline">0660 606 0775</span>
                 </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 shrink-0" aria-label="Menü">
+                <button onclick="toggleMobileMenu()" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 shrink-0" aria-label="Menü">
                     <i class="fa-solid fa-bars text-lg"></i>
                 </button>
             </div>
@@ -422,7 +422,7 @@
 
                     <!-- HERO BUTTONS (EQUAL HEIGHT: h-[68px], grid-cols-2) -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-                        <a href="tel:+436606060775" onclick="trackConversion('phone_click')" class="h-[68px] w-full inline-flex items-center justify-center gap-3 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-base sm:text-lg px-4 sm:px-6 rounded-2xl shadow-lg shadow-wienRed-600/30 transition transform hover:-translate-y-0.5">
+                        <a href="tel:+436606060775" onclick="trackConversion('phone_click')" class="h-14 sm:h-[68px] w-full inline-flex items-center justify-center gap-3 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold text-base sm:text-lg px-4 sm:px-6 rounded-2xl shadow-lg shadow-wienRed-600/30 transition transform hover:-translate-y-0.5">
                             <i class="fa-solid fa-phone-volume text-xl ring-icon shrink-0"></i>
                             <div class="text-left">
                                 <span class="block text-[11px] uppercase tracking-wider font-semibold text-wienRed-100">Sofort-Termin für Dachbodenentrümpelung</span>
@@ -430,7 +430,7 @@
                             </div>
                         </a>
                         <a href="https://wa.me/436606060775?text=Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20Fixpreis-Angebot%20für:%20Dachbodenentrümpelung." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
-                           class="h-[68px] w-full inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-base sm:text-lg px-4 sm:px-6 rounded-2xl shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
+                           class="h-14 sm:h-[68px] w-full inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-base sm:text-lg px-4 sm:px-6 rounded-2xl shadow-lg shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
                             <i class="fa-brands fa-whatsapp text-2xl shrink-0"></i>
                             <div class="text-left">
                                 <span class="block text-[11px] uppercase tracking-wider font-semibold text-emerald-100">Fotos senden = Sofort-Preis</span>
@@ -996,19 +996,19 @@
 
     
     <!-- STICKY MOBILE CONVERSION BAR (3-BUTTON FIXED BOTTOM) -->
-    <div class="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-navy-950/95 backdrop-blur-md border-t border-slate-800 p-2 shadow-2xl">
+    <div class="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-navy-950/95 backdrop-blur-md border-t border-slate-800 px-3 py-2 pb-[calc(0.5rem+env(safe-area-inset-bottom,0px))] shadow-2xl">
         <div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
-            <a href="tel:+436606060775" onclick="trackConversion('phone_click')" class="bg-wienRed-600 text-white font-extrabold py-2.5 px-2 rounded-xl flex flex-col items-center justify-center shadow-md">
-                <i class="fa-solid fa-phone-volume text-base mb-0.5 ring-icon"></i>
-                <span class="text-[11px] uppercase tracking-wide">Anrufen</span>
+            <a href="tel:+436606060775" onclick="trackConversion('phone_click')" class="h-12 bg-wienRed-600 hover:bg-wienRed-700 text-white font-extrabold rounded-xl flex flex-col items-center justify-center shadow-md active:scale-95 transition">
+                <i class="fa-solid fa-phone-volume text-sm mb-0.5 ring-icon"></i>
+                <span class="text-[10px] uppercase font-bold tracking-wider leading-none">Anrufen</span>
             </a>
-            <a href="https://wa.me/436606060775?text=Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20unverbindliches%20Fixpreis-Angebot%20für:%20Dachbodenentrümpelung." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')" class="bg-emerald-600 text-white font-extrabold py-2.5 px-2 rounded-xl flex flex-col items-center justify-center shadow-md">
-                <i class="fa-brands fa-whatsapp text-lg mb-0.5"></i>
-                <span class="text-[11px] uppercase tracking-wide">WhatsApp</span>
+            <a href="https://wa.me/436606060775?text=Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20unverbindliches%20Fixpreis-Angebot%20für:%20Dachbodenentrümpelung." target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')" class="h-12 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold rounded-xl flex flex-col items-center justify-center shadow-md active:scale-95 transition">
+                <i class="fa-brands fa-whatsapp text-base mb-0.5"></i>
+                <span class="text-[10px] uppercase font-bold tracking-wider leading-none">WhatsApp</span>
             </a>
-            <a href="kontakt.html" class="bg-amber-400 text-navy-950 font-extrabold py-2.5 px-2 rounded-xl flex flex-col items-center justify-center shadow-md">
-                <i class="fa-solid fa-envelope text-base mb-0.5"></i>
-                <span class="text-[11px] uppercase tracking-wide">Kontakt / Mail</span>
+            <a href="kontakt.html" class="h-12 bg-amber-400 hover:bg-amber-300 text-navy-950 font-extrabold rounded-xl flex flex-col items-center justify-center shadow-md active:scale-95 transition">
+                <i class="fa-solid fa-envelope text-sm mb-0.5"></i>
+                <span class="text-[10px] uppercase font-bold tracking-wider leading-none">Kontakt</span>
             </a>
         </div>
     </div>
