@@ -591,8 +591,8 @@ def generate_header(active_file="index.html"):
         <a href="index.html#leistungen" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">Leistungen</a>
         <a href="index.html#keyword-index" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">22 Spezial-Seiten</a>
         <a href="index.html#faq" class="px-3 py-2 rounded-lg hover:bg-slate-100 hover:text-wienRed-600 transition whitespace-nowrap">FAQ</a>
-        <a href="kontakt.html" class="px-3 py-2 rounded-lg {'text-wienRed-600 bg-wienRed-50 font-bold' if active_file == 'kontakt.html' else 'hover:bg-slate-100 hover:text-wienRed-600'} transition inline-flex items-center gap-1.5 whitespace-nowrap">
-            <i class="fa-regular fa-address-card text-wienRed-600"></i>
+        <a href="kontakt.html" class="px-4 py-2 rounded-xl {'bg-wienRed-600 text-white font-bold shadow-md shadow-wienRed-600/20' if active_file == 'kontakt.html' else 'bg-slate-100 hover:bg-wienRed-600 hover:text-white text-navy-900 font-bold'} transition inline-flex items-center gap-1.5 whitespace-nowrap">
+            <i class="fa-regular fa-address-card"></i>
             <span>Kontakt</span>
         </a>
     """
@@ -647,19 +647,9 @@ def generate_header(active_file="index.html"):
                 {nav_links}
             </nav>
 
-            <!-- Header Conversion CTAs (Mobile-Optimized & Equal-Sized on Desktop) -->
-            <div class="flex items-center gap-2 shrink-0">
-                <a href="https://wa.me/{PHONE_TEL.replace('+', '')}?text={f'Hallo%20Wiener%20Dienst!%20Ich%20bitte%20um%20ein%20unverbindliches%20Fixpreis-Angebot%20f%C3%BCr%20eine%20R%C3%A4umung%20in%20Wien.'}" target="_blank" rel="noopener" onclick="trackConversion('whatsapp_click')"
-                   class="hidden sm:inline-flex w-[168px] h-11 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs xl:text-sm rounded-xl shadow-sm transition whitespace-nowrap shrink-0 items-center justify-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>WhatsApp</span>
-                </a>
-                <a href="tel:{PHONE_TEL}" onclick="trackConversion('phone_click')"
-                   class="w-11 h-11 sm:w-[168px] sm:h-11 bg-wienRed-600 hover:bg-wienRed-700 text-white font-bold text-xs xl:text-sm rounded-xl shadow-md shadow-wienRed-600/25 transition whitespace-nowrap shrink-0 flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-phone ring-icon text-sm sm:text-base"></i>
-                    <span class="hidden sm:inline">{PHONE_DISPLAY}</span>
-                </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 shrink-0" aria-label="Menü">
+            <!-- Mobile Menu Toggle Button (No Header CTAs) -->
+            <div class="flex items-center lg:hidden shrink-0">
+                <button onclick="toggleMobileMenu()" class="w-11 h-11 flex items-center justify-center rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 shrink-0" aria-label="Menü">
                     <i class="fa-solid fa-bars text-lg"></i>
                 </button>
             </div>
